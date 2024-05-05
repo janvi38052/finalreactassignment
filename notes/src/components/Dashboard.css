@@ -1,0 +1,135 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px; /* Added margin-top */
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-item-form input,
+.add-item-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-item-form textarea {
+  resize: none;
+}
+
+.add-item-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-item-form button:hover {
+  background-color: #45a049;
+}
+
+.items-list {
+  width: 100%;
+}
+
+.items-list ul {
+  padding: 0;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.item h3,
+.item p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.item-actions button {
+  padding: 8px 15px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-actions button.edit-button {
+  background-color: #008CBA;
+  color: white;
+}
+
+.item-actions button.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.item-actions button:hover {
+  opacity: 0.8;
+}
+
+.next-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  opacity: 0.8;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
